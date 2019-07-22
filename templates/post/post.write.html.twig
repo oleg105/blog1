@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Пост {% endblock %}
+
+{% block body %}
+
+    <form action="post.php" method="POST">
+        <input type="text" name="header"><br><br>
+        <textarea name="message"></textarea><br><br>
+        <input type="submit">
+    </form>
+
+{% endblock %}
+
+

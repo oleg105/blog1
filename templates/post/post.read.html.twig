@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ post.header }} {% endblock %}
+
+{% block body %}
+
+    <h2>{{ post.header }}</h2>
+    <h4>{{ post.date|date }}</h4>
+    <p>{{ post.text }}</p>
+
+{% endblock %}
